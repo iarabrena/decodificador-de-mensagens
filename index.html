@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador De Mensagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <main>
+        <dialog id="pop-up">
+            <p> &#9888; Utilizar apenas letras minúsculas e sem acento.</p>
+            <button id="fechar-modal">OK</button>
+        </dialog>
+
+        <img class="imagem-logo" src="assets/logo4.png" alt="um papel com uma lupa na mão">
+
+        <div class="area-de-texto">
+            <textarea class="texto-area" placeholder="Digite aqui..." name="" id="texto"></textarea>
+            
+            <aside class="caixa-de-recebimento">
+                <p id="resultado"></p>
+            </aside>
+        </div>
+
+        <div class="custom-button">
+            <button class="custom-button1" onclick="criptografar()">Criptografar</button>
+            <button class="custom-button2" onclick="descriptografar()">Descriptografar</button>
+        </div>
+        
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; Site Desenvolvido por <a href="https://www.linkedin.com/in/iarabrena/">Iara Brena</a> - 2024.</p>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
