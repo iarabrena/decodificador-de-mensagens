@@ -13,11 +13,7 @@
 body{
     font-family: var(--font-texto);
     background-color: var(--cor-primaria);
-}
-    
-main{
-    height: 100vh;
-}
+}  
 
 /*pop up / modal*/
 .pop-up::backdrop{
@@ -125,6 +121,8 @@ main{
     text-align: center;
     background-color: #0a3ad8;
     color: whitesmoke;
+    margin-top: 10%;
+    padding: 0.3rem 0;
 }
 
 /*aside de resultado, configuração da cor de letra*/
@@ -140,9 +138,6 @@ footer>p>a{
 }
 
 @media (max-width: 480px){
-    body {
-        height: 100vh;
-    }
 
     #pop-up{
         width: 50%;
@@ -170,20 +165,60 @@ footer>p>a{
     .custom-button{
         flex-direction: column;
         gap: 12px;
-        padding: 0;
-        margin: 16%;
+        padding: 10px;
+        padding-top: 40px;
+        margin: 0;
         align-items: center;
     }
 
     footer{
+        padding: 8px;
+        text-align: center;
+        margin-top: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width:767px){
+    #pop-up{
+        width: 50%;
+        height: 12%;
+    }
+    
+    .area-de-texto{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .caixa-de-recebimento{
+        flex-direction: column;
+    }
+
+    .texto-area{
+        padding: 0 4rem;
+    }
+
+    .caixa-de-recebimento{
+        margin: auto;
+    }
+
+    .custom-button{
+        flex-direction: column;
+        gap: 12rem;
+        padding: 10rem;
+        padding-top: 40rem;
         margin: 0;
-        padding: 10px;
-        margin-top: 240px;
+        align-items: center;
+    }
+
+    footer{
+        padding: 0.3rem 0;
+        text-align: center;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    body{
+    main{
         height: 100vh;
     }
 
@@ -220,7 +255,6 @@ footer>p>a{
 
     footer{
         margin: 0;
-        padding: 10px;
-        margin-top: 110px;
+        padding: 0.3rem 0;
     }
 }
